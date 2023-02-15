@@ -1,0 +1,16 @@
+:root {
+    --color-buttons: #f1c40f;
+    --color-icons: darkorange;
+    --font-principal: 'Lato', sans-serif;
+    --color-gray: #ddd;
+    /*<iframe width="2543" height="1166" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>*/
+}
+*, *::before, *::after { 
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+/* --- Global --- */
