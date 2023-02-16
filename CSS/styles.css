@@ -14,3 +14,67 @@ html {
     box-sizing: border-box;
 }
 /* --- Global --- */
+body { 
+    font-family: var(--font-principal); 
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img { 
+    width: 100%;
+    max-width: 30rem; 
+}
+/* --- Header section --- */
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+.header__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border: 1px solid black;
+}
+.header__links a { text-align: center; }
+/* --- Main section --- */
+.main {
+    margin: 7rem auto 3rem auto;
+    width: 100%;
+    max-width: 80rem;
+}
+.hero {
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: 3rem;
+    border: 1px solid black;
+}
+.hero-title { text-align: center; }
+.hero-input { 
+    width: 30%; 
+    margin: 0 auto;
+}
+.button {
+    width: max-content;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: var(--font-principal);
+    background-color: var(--color-buttons);
+    text-transform: uppercase;
+    border: none;
+}
+.button-bolder { font-weight: 800;}
+/* --- Features section --- */
+.features {
+    display: grid;
+    row-gap: 2rem;
+}
+.feature-icon { color: var(--color-icons); }
