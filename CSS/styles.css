@@ -49,12 +49,30 @@ li { text-align: center; }
     align-items: center;
     /* border: 1px solid black; */
 }
+@media only screen and (max-width: 874px) {
+    .header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 560px) {
+    .header {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .header__links {
+        grid-template-columns: auto;
+        row-gap: 1rem;
+    }
+}
 .header__links a { text-align: center; }
 /* --- Main section --- */
 .main {
     margin: 7rem auto 3rem auto;
     width: 100%;
     max-width: 90rem;
+}
+@media only screen and (max-width: 560px) {
+    .main { margin-top: 15rem; }
 }
 .hero {
     display: grid;
@@ -88,14 +106,24 @@ li { text-align: center; }
     display: grid;
     grid-template-columns: 10% 90%;
     align-items: center;
+    padding: 2rem;
     /* border: 1px solid black; */
 }
 .feature-icon { color: var(--color-icons); }
+@media only screen and (max-width: 720px) {
+    .feature {
+        grid-template-columns: auto;
+    }
+    .feature-icon { display: none; }
+}
 /* --- Video --- */
 .video { 
     width: 60%;
     /* border: 1px solid black; */
     margin: 0 auto 3rem auto;
+}
+@media only screen and (max-width: 720px) {
+    .video { width: 80%;}
 }
 /* --- Pricing section --- */
 .pricing {
@@ -103,6 +131,22 @@ li { text-align: center; }
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     /* border: 1px solid black; */
+}
+@media only screen and (max-width: 900px) {
+    .pricing {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .pricing {
+        grid-template-columns: auto;
+        row-gap: 2rem;
+    }
+    .pricing-product {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
 .pricing-product {
     display: grid;
@@ -132,6 +176,9 @@ li { text-align: center; }
     width: 100%;
     max-width: 90rem;
     margin: 0 auto;
+}
+@media only screen and (max-width: 945px) {
+    .footer { width: 90%; }
 }
 .footer__links {
     display: grid;
